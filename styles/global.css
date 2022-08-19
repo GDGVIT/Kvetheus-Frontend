@@ -1,0 +1,164 @@
+:root {
+  --cyan: #00e6f6;
+  --blue: #1f6cab;
+  --darkblue: #082a3a;
+  --white: #fff;
+  --navy: #011925;
+}
+
+html,
+body {
+  background-color: var(--navy);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: var(--cyan);
+  line-height: 1.5;
+  letter-spacing: -0.2%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: -0.2%;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: -0.4%;
+}
+
+th {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  letter-spacing: -0.4%;
+}
+
+td {
+  line-height: 1.5;
+  letter-spacing: -0.4%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.body {
+  min-height: 80vh;
+}
+
+.form {
+  background-image: url("/bgLeft.svg"), url("/kvetheusText.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right, bottom left;
+  width: 100vw;
+  height: 75vh;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+.searchbar {
+  max-width: 45vw;
+  margin: auto;
+  background-color: rgb(255 255 255 / 22%);
+  border-radius: 50px;
+}
+
+form {
+  width: fit-content;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+form h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-family: Jost, sans-serif;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: -0.02rem;
+}
+
+form input {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 1rem;
+  width: 40vw;
+  padding: 1rem;
+}
+
+input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: rgb(196 234 255 / 47%);
+  background-color: transparent;
+}
+
+input:focus::placeholder {
+  color: transparent;
+  background-color: transparent;
+}
+
+form button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.loading {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 2rem;
+}
+
+footer {
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer span {
+  color: red;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3e5965;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1375px) {
+  form {
+    margin-top: 10rem;
+  }
+
+  .form {
+    background-size: auto, 100%;
+  }
+
+  .searchbar {
+    max-width: 60vw;
+  }
+}
